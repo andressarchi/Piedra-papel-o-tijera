@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Teko:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+:root{
+    --clr-gold:#DCC4AF;
+    --clr-baige:#EAEFD3;
+    --clr-purple:#27233A;
+}
+body{
+    background-color: var(--clr-purple);
+    color: var(--clr-baige);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+    background-color: var(--clr-baige);
+    border-bottom: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    color: var(--clr-purple);
+}
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem ;
+    text-align: center;
+}
+.instrucciones{
+    margin-bottom: 3rem;
+}
+.marcador{
+    background-color: var(--clr-gold);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-purple);
+    /* font-weight: 600; */
+    margin-bottom: 2rem;
+}
+.marcador .nombre{
+    position: absolute;
+    color: var(--clr-baige);
+    background-color: var(--clr-purple);
+    line-height: 1;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-gold);
+}
+.marcador .nombre-jugador{
+    right: 85%;
+}
+.marcador .nombre-computadora{
+    left: 85%;
+}
+.marcador .puntos{
+    font-size: 1.6rem;
+}
+.elegir-opcion{
+    margin-bottom: 2rem;
+}
+.elegir-opcion h2{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.opciones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.arma{
+    font-size: 2rem;
+    background-color: var(--clr-baige);
+    border:0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-bottom:3rem ;
+}
+.mensaje{
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+.mensaje .eleccion{
+    color: var(--clr-purple);
+    background-color: var(--clr-gold);
+    border-radius: .25rem;
+    padding: .25rem;
+}
+.btn{
+    border: none;
+    line-height: 1;
+    background-color: var(--clr-baige);
+    color: var(--clr-purple);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.disabled{
+    display: none;
+}
